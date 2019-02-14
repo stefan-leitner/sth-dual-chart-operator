@@ -120,7 +120,7 @@ Output Endpoints
     }
     ```
 
-    - **Message:** This output endpoint can be used to send a info or error message. The message should have the following format. 
+-   **Message:** This output endpoint can be used to send a info or error message. The message should have the following format. 
 
     ```json
     {
