@@ -3,7 +3,9 @@ Code Example
 
 At the moment I'm working on different Widgets and Operators for the Wirecloud Application MashUp-Platform, part of the FIWARE (https://www.fiware.org/) ecosystem. The following operator should serve as code example for my job application.
 
-The purpose of the operator called "sth-dual-chart-operator" is to retrieve historical data for two sensors for a given time range, merge the data and provide a JSON object for Google Charts (Dual-Y LineChart). As shown below the operator serves as link between the input mask and output as Google Charts
+The purpose of the operator called "sth-dual-chart-operator" is to retrieve historical data for two sensors for a given time range, merge the data and provide a JSON object for Google Charts (Dual-Y LineChart). The operator acts as link between the input mask and output as Google Charts (shown below).
+
+![Wirecloud - input mask and google charts](https://github.com/stefan-leitner/sth-dual-chart-operator/blob/master/src/images/wirecloud.png?raw=true)
 
 The operator recevies as input a JSON object with the follwoing format
 
@@ -95,4 +97,3 @@ The received data is processed by the operator and the following JSON output for
 }
 
 ```
-
