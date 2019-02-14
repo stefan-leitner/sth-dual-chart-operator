@@ -1,9 +1,9 @@
 Code Example
 ============
 
-At the moment I'm working on different Widgets and Operators for the Wirecloud Application MashUp-Platform, part of the FIWARE (https://www.fiware.org/) ecosystem. The following operator should serve as code example for my job application.
+At the moment I'm working on different Widgets and Operators for the Wirecloud Application MashUp-Platform, part of the FIWARE (https://www.fiware.org/) ecosystem. The following operator ([src/js/main.js](src/js/main.js)) should serve as code example for my job application.
 
-The purpose of the operator called "sth-dual-chart-operator" is to retrieve historical data for two sensors for a given time range, merge the data and provide a JSON object for Google Charts (Dual-Y LineChart). The operator acts as link between the input mask and Google Charts (shown below).
+The purpose of the operator called "sth-dual-chart-operator" is to retrieve historical data for two sensors and attributes within a given time range, merge the received data and provide a JSON object for Google Charts (Dual-Y LineChart). The operator acts as link between the input mask and Google Charts (shown below).
 
 ![Wirecloud - input mask and google charts](https://github.com/stefan-leitner/sth-dual-chart-operator/blob/master/src/images/wirecloud.png?raw=true)
 
