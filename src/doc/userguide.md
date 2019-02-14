@@ -32,7 +32,6 @@ Input Endpoints
 
 - **Input Widget Data:** This input receives the following JSON object with . 
 
-
     ```json
     {
         "aggregationMethod": "max",
@@ -45,21 +44,79 @@ Input Endpoints
     }
     ```
 
-Input Endpoints
---------
-
 Output Endpoints
 --------
 
 -   **Values:** This widget sends an JSON Object with the selected values from the form.
 
     ```json
-    {
-        "entity": { "id": "Trafficlight_2", "type": "static", "TimeInstant": "2018-02-05T12:29:35.00Z", "...": "..."},
-        "attribute": "humidity",
-        "unit": "%",
-        "startDate": "2018-03-19T23:00:00.000Z",
-        "endDate": "2018-03-20T22:59:00.000Z"
+    { 
+      "type": "LineChart",
+      "options": {
+        "title": "Maximum pro Tag",
+        "series": {
+          "0": {
+            "targetAxisIndex": 0
+          },
+          "1": {
+            "targetAxisIndex": 1
+          }
+        },
+        "vAxes": {
+          "0": {
+            "title": "airPressure [hPa]"
+          },
+          "1": {
+            "title": "humidity [%]"
+          }
+        },
+        "hAxis": {
+          "title": "Datum und Zeit"
+        },
+        "pointSize": 1
+      },
+      "data": [
+        [
+          "Time",
+          "airPressure - Sensor3",
+          "humidity - Sensor6"
+        ],
+        [
+          "30.07.18",
+          974.04,
+          null
+        ],
+        [
+          "31.07.18",
+          974.12,
+          70.01
+        ],
+        [
+          "01.08.18",
+          975.59,
+          77.25
+        ],
+        [
+          "02.08.18",
+          977.42,
+          90.61
+        ],
+        [
+          "03.08.18",
+          977.22,
+          90.74
+        ],
+        [
+          "04.08.18",
+          975.93,
+          90.35
+        ],
+        [
+          "05.08.18",
+          974.93,
+          84.96
+        ]
+      ]
     }
     ```
 
