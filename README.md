@@ -24,7 +24,7 @@ Based on this input the operator creates an url for `entityX` and and `attribute
 
 e.g. `http://pep-comet:8666/STH/v1/contextEntities/type/static/id/Sensor3/attributes/airPressure`.
 
-The received data is processed by the operator and the following JSON output for Google Charts is created.
+The received data is processed by the operator and the following JSON object is created and forwared to the Google Charts widget.
 
 ```json
 {
