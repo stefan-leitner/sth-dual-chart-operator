@@ -40,11 +40,9 @@
             await processData(dataSensorOne, dataSensorTwo, inputData);
         }
         const result = getData();
-        MashupPlatform.operator.log(result, MashupPlatform.log.INFO);
     };
 
     const getSensorData = function getSensorData(url, requestParams) {
-        MashupPlatform.operator.log("GET " + url, MashupPlatform.log.INFO);
         return new Promise((resolve, reject) => {
             mp.http.makeRequest(url, {
                 method: "GET",
@@ -92,7 +90,6 @@
             }
             mp.wiring.pushEvent("values", JSON.stringify(chartData));
         }).catch(e => {
-            MashupPlatform.operator.log("CATCH" + e, MashupPlatform.log.INFO)
             mp.wiring.pushEvent("values", JSON.stringify(dummyChart));
             sendMessage("error", e+" - no data available ")
         })
